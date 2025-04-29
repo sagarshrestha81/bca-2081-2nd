@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+</head>
+
+<body>
+    <style>
+        label{
+            display: block;
+        }
+        small{
+            font-size: 8px;
+            display: block;
+            .err{
+                color:#ff0000
+            }
+            .success{
+                color: #00ff00;
+            }
+        }
+        
+        
+    </style>
+    <div id="formMsg" class="msg"></div>
+    <form action="#" method="POST" id="myForm" onsubmit="return false;">
+        <label for="fullname" >Fullname</label>
+        <input type="text" name="fullnamemy" id="fullname">
+        <small id="fullnameMsg" class="msg"></small>
+        <br>
+        <label for="email">email</label>
+        <input type="text" name="email" id="email">
+        <small id="emailMsg" class="msg"></small>
+        <br>
+        <label for="password">password</label>
+        <input type="password" name="password" id="password">
+        <small id="passwordMsg" class="msg"></small>
+        <br>
+        <button type="submit" onclick="sub();">submit</button>
+
+    </form>
+
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
